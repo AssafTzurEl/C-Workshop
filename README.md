@@ -7,6 +7,8 @@ Code for a C workshop I've been teaching for the last few years.
 This project is the "official" solution to one of the exams I've been giving. It follows coding guidelines
 discussed in the course, touches on subjects we've learned, and contains special notes to points of interest.
 
+Project documentation may be districuted using [Doxygen](http://www.doxygen.nl/index.html) - use the Doxyfile in the project folder.
+
 ## CApp
 
 A playground project for demonstrating various subjects as we learn them. Might contain complete and utter
