@@ -2,7 +2,6 @@
 
 /**
  * Shorthand for "unsigned long long int".
- *
  */
 typedef unsigned long long int ull_t;
 
@@ -24,7 +23,7 @@ ull_t Fibonacci(size_t n);
 /**
  * Initializes resources. This is optional: If you don't do it in advance, the
  * first call to Fibonacci() will.
-*/
+ */
 void InitFibonacci(void);
 
 /**

@@ -79,11 +79,14 @@ void InitFibonacci(void)
 {
     if (!s_fibonacciDb)
     {
-        s_fibonacciDb = malloc(2 * sizeof(ull_t));
+        /* Initialize DB with first two Fibonacci numbers. From here, we can calculate any other number. */
+        const size_t INITIAL_DB_SIZE = 2;
+
+        s_fibonacciDb = malloc(INITIAL_DB_SIZE * sizeof(ull_t));
 
         if (s_fibonacciDb)
         {
-            s_fibonacciDbSize = 2;
+            s_fibonacciDbSize = INITIAL_DB_SIZE;
             s_fibonacciDb[0] = 0;
             s_fibonacciDb[1] = 1;
         }
@@ -103,10 +106,11 @@ void FinalizeFibonacci(void)
 
         /*
            Assaf's note: Advanced topic: Assertions.
-       */
+        */
         assert(s_fibonacciDbSize != 0);
 
         free(s_fibonacciDb);
         s_fibonacciDbSize = 0;
+        s_fibonacciDb = NULL;
     }
 }

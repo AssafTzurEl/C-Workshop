@@ -8,7 +8,7 @@
 /**
  * Fibonacci test.
  */
-void main(void)
+int main(void)
 {
     InitFibonacci();
 
@@ -28,4 +28,6 @@ void main(void)
 
 
     FinalizeFibonacci();
+
+    return 0;
 }
