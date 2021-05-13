@@ -2,7 +2,7 @@
 #include "Fibonacci.h"
 
 /*
-   Assaf's note: Did you remember to set your project's warning level to 4?
+   Assaf's note: Did you remember to set your project's warning level to All?
 */
 
 /**
